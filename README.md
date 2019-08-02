@@ -5,13 +5,13 @@ To get it installed, run the following command on the command-line:
 
     npm install -g pd-cli
 
-Then, to use the cli use the `pd` command. To login run:
+Then, to use the cli use the `pdcli` command. To login run:
 
-    pd auth login
+    pdcli auth login
 
 To get the rest of the command/subcommand combinations run:
 
-    pd --help
+    pdcli --help
 
 
 Currently, here are the functions that can be accomplished with the PagerDuty-CLI:

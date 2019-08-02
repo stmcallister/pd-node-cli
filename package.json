@@ -1,11 +1,10 @@
 {
   "name": "pagerduty-node-cli",
   "version": "0.1.0",
-  "description": "pd, a CLI for working with PagerDuty",
+  "description": "pdcli, a CLI for working with PagerDuty",
   "main": "index.js",
   "bin": {
-    "pd": "index.js",
-    "pagerduty": "index.js"
+    "pdcli": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

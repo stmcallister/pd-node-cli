@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const user = require('./lib/user.js');
+const team = require('./lib/team.js');
 const program = require('commander');
 const process = require('process');
 const inquirer = require('inquirer');
@@ -71,16 +71,16 @@ program
         const info = program.args[program.args.length-1];
         let asJson = !!info.json;
  
-        user.listUsers().then(function (results) {
+        team.list().then(function (results) {
             if (asJson) {
                 console.log(results);
             }
             else {
                 const parsedBody = JSON.parse(results.body);
 
-                for (let i = 0; i < parsedBody.users.length; i++) {
-                    let record = parsedBody.users[i];
-                    user.display(record);
+                for (let i = 0; i < parsedBody.teams.length; i++) {
+                    let record = parsedBody.teams[i];
+                    team.display(record);
                 }
             }
         });
