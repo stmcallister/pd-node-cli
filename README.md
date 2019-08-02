@@ -1,4 +1,6 @@
 # PagerDuty-CLI
+*NOTE: This project is still very much a demo proof of concept, and does not fully support all the functionalities of the PagerDuty API*
+
 This is a tool that allows you to interact with PagerDuty without leaving the command line.
 
 To get it installed, run the following command on the command-line:
